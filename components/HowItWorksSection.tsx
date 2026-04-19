@@ -62,14 +62,14 @@ export default function HowItWorksSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-indigo-300 mb-4 border border-indigo-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-indigo-600 mb-4 border border-indigo-500/30">
           ⚙️ Step-by-step breakdown
         </div>
         <h2 className="text-3xl sm:text-5xl font-black mb-4">
           How It{" "}
           <span className="gradient-text">Actually Works</span>
         </h2>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto">
+        <p className="text-gray-600 text-lg max-w-xl mx-auto">
           Five steps. From your transaction entering the waiting room to landing on-chain.
         </p>
       </motion.div>
@@ -120,10 +120,10 @@ export default function HowItWorksSection() {
                       >
                         {step.title}
                       </h3>
-                      <p className="text-gray-400 text-xs mb-2 font-medium">
+                      <p className="text-gray-600 text-xs mb-2 font-medium">
                         {step.subtitle}
                       </p>
-                      <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                      <p className="text-gray-700 text-sm leading-relaxed mb-3">
                         {step.desc}
                       </p>
                       <div

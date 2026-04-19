@@ -53,7 +53,7 @@ export default function RisksSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-red-400 mb-4 border border-red-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-red-500 mb-4 border border-red-500/30">
           ⚠️ Not all sunshine and profit
         </div>
         <h2 className="text-3xl sm:text-5xl font-black mb-4">
@@ -63,7 +63,7 @@ export default function RisksSection() {
           </span>{" "}
           & The Future
         </h2>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto">
+        <p className="text-gray-600 text-lg max-w-xl mx-auto">
           The block builder system has real risks. The community is actively working on solutions.
         </p>
       </motion.div>
@@ -84,7 +84,7 @@ export default function RisksSection() {
               <div>
                 <h3 className="font-black" style={{ color: risk.color }}>{risk.title}</h3>
                 <div className="flex items-center gap-2 mt-1">
-                  <div className="h-1 flex-1 rounded-full bg-gray-800">
+                  <div className="h-1 flex-1 rounded-full bg-gray-200">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={inView ? { width: `${risk.severity}%` } : {}}
@@ -99,7 +99,7 @@ export default function RisksSection() {
                 </div>
               </div>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed">{risk.desc}</p>
+            <p className="text-gray-700 text-sm leading-relaxed">{risk.desc}</p>
           </motion.div>
         ))}
       </div>

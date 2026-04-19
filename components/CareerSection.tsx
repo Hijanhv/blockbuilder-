@@ -75,17 +75,17 @@ export default function CareerSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-cyan-400 mb-4 border border-cyan-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-cyan-600 mb-4 border border-cyan-500/30">
           💼 Why this matters for your career
         </div>
         <h2 className="text-3xl sm:text-5xl font-black mb-4">
           From Coder to{" "}
           <span className="gradient-text">Real Crypto Engineer</span>
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
           Crypto jobs are rarely just "write smart contracts." Good teams want developers
           who understand the{" "}
-          <span className="text-white font-semibold">full transaction lifecycle</span> —
+          <span className="text-gray-900 font-semibold">full transaction lifecycle</span> —
           from submission to finality.
         </p>
       </motion.div>
@@ -101,7 +101,7 @@ export default function CareerSection() {
             className="glass rounded-2xl p-4 text-center border border-indigo-500/20"
           >
             <p className="text-2xl sm:text-3xl font-black gradient-text mb-1">{s.value}</p>
-            <p className="text-xs text-gray-400 leading-tight">{s.label}</p>
+            <p className="text-xs text-gray-600 leading-tight">{s.label}</p>
           </motion.div>
         ))}
       </div>
@@ -121,7 +121,7 @@ export default function CareerSection() {
               <span className="text-3xl shrink-0">{r.icon}</span>
               <div>
                 <h3 className="font-black mb-1" style={{ color: r.color }}>{r.title}</h3>
-                <p className="text-sm text-gray-300 leading-relaxed">{r.desc}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{r.desc}</p>
               </div>
             </div>
           </motion.div>
@@ -136,18 +136,18 @@ export default function CareerSection() {
         className="glass rounded-3xl p-7 border border-yellow-500/20 mb-14"
         style={{ background: "rgba(245,158,11,0.04)" }}
       >
-        <h3 className="text-xl font-black text-yellow-400 mb-5 text-center">
+        <h3 className="text-xl font-black text-yellow-600 mb-5 text-center">
           ⚡ The Interview Advantage
         </h3>
-        <p className="text-gray-400 text-sm text-center mb-6">
-          Asked: <span className="text-white font-semibold">"How would you build a secure DEX?"</span>
+        <p className="text-gray-600 text-sm text-center mb-6">
+          Asked: <span className="text-gray-900 font-semibold">"How would you build a secure DEX?"</span>
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="rounded-2xl p-4 border border-red-500/20" style={{ background: "rgba(239,68,68,0.06)" }}>
             <p className="text-red-400 font-bold text-xs uppercase tracking-wider mb-3">
               ❌ Average candidate
             </p>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-2 text-sm text-gray-600">
               <li>• Write a swap contract</li>
               <li>• Deploy it</li>
               <li>• Add some basic tests</li>
@@ -155,10 +155,10 @@ export default function CareerSection() {
             </ul>
           </div>
           <div className="rounded-2xl p-4 border border-green-500/20" style={{ background: "rgba(16,185,129,0.06)" }}>
-            <p className="text-green-400 font-bold text-xs uppercase tracking-wider mb-3">
+            <p className="text-green-600 font-bold text-xs uppercase tracking-wider mb-3">
               ✅ Builder-aware candidate
             </p>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <ul className="space-y-2 text-sm text-gray-700">
               <li>• Protect users from sandwich attacks</li>
               <li>• Use TWAP oracles (manipulation-resistant)</li>
               <li>• Optimize slippage handling</li>
@@ -179,7 +179,7 @@ export default function CareerSection() {
         transition={{ duration: 0.6, delay: 0.6 }}
         className="mb-14"
       >
-        <h3 className="text-xl font-black text-center mb-6 text-white">
+        <h3 className="text-xl font-black text-center mb-6 text-gray-900">
           How important is this — by role?
         </h3>
         <div className="space-y-3">
@@ -193,7 +193,7 @@ export default function CareerSection() {
               style={{ borderColor: `${j.color}20` }}
             >
               <div>
-                <span className="font-bold text-white text-sm">{j.role}</span>
+                <span className="font-bold text-gray-900 text-sm">{j.role}</span>
                 <span className="text-gray-500 text-xs ml-3">{j.detail}</span>
               </div>
               <span
@@ -236,8 +236,8 @@ export default function CareerSection() {
             >
               <span className="text-xs font-black text-indigo-500 mt-0.5 w-6 shrink-0">{item.num}</span>
               <div>
-                <p className="text-sm font-bold text-white">{item.topic}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{item.detail}</p>
+                <p className="text-sm font-bold text-gray-900">{item.topic}</p>
+                <p className="text-xs text-gray-600 mt-0.5">{item.detail}</p>
               </div>
             </motion.div>
           ))}
@@ -253,14 +253,14 @@ export default function CareerSection() {
         style={{ boxShadow: "0 0 60px rgba(99,102,241,0.1)" }}
       >
         <div className="text-4xl mb-4">💡</div>
-        <h3 className="text-xl font-black text-gray-300 mb-3">One-Line Summary</h3>
-        <p className="text-lg sm:text-2xl text-white font-black leading-relaxed max-w-3xl mx-auto">
+        <h3 className="text-xl font-black text-gray-700 mb-3">One-Line Summary</h3>
+        <p className="text-lg sm:text-2xl text-gray-900 font-black leading-relaxed max-w-3xl mx-auto">
           A <span className="gradient-text">block builder</span> is a high-speed optimizer
           that constructs the most valuable next blockchain block and sells it to the validator.
         </p>
         <p className="text-gray-500 text-sm mt-4 max-w-xl mx-auto">
           Understanding this moves you from &ldquo;someone who codes contracts&rdquo; to{" "}
-          <span className="text-indigo-300 font-semibold">
+          <span className="text-indigo-600 font-semibold">
             a crypto engineer who understands where value, risk, and performance actually live.
           </span>
         </p>

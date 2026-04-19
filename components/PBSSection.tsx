@@ -69,13 +69,13 @@ export default function PBSSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-green-400 mb-4 border border-green-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-green-600 mb-4 border border-green-500/30">
           🔗 Ethereum ecosystem
         </div>
         <h2 className="text-3xl sm:text-5xl font-black mb-4">
           <span className="gradient-text">PBS</span> — Who Does What?
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
           Proposer-Builder Separation splits the job in two. Validators focus on
           security. Builders focus on profit. Everyone wins — mostly.
         </p>
@@ -86,7 +86,7 @@ export default function PBSSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="glass rounded-3xl p-6 mb-12 border border-gray-700"
+        className="glass rounded-3xl p-6 mb-12 border border-gray-200"
       >
         <p className="text-center text-xs text-gray-500 uppercase tracking-wider mb-6">
           Data Flow
@@ -148,7 +148,7 @@ export default function PBSSection() {
             </div>
             <ul className="space-y-2">
               {role.points.map((p) => (
-                <li key={p} className="text-sm text-gray-300 flex items-start gap-2">
+                <li key={p} className="text-sm text-gray-700 flex items-start gap-2">
                   <span style={{ color: role.color }} className="mt-0.5 shrink-0">✓</span>
                   {p}
                 </li>
@@ -166,8 +166,8 @@ export default function PBSSection() {
         className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-5"
       >
         <div className="glass rounded-2xl p-5 border border-red-500/20">
-          <h4 className="text-red-400 font-black mb-3">😵 Before PBS</h4>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <h4 className="text-red-600 font-black mb-3">😵 Before PBS</h4>
+          <ul className="space-y-2 text-sm text-gray-700">
             {[
               "Validators had to do everything",
               "Run a staking node",
@@ -176,14 +176,14 @@ export default function PBSSection() {
               "Way too complex for most",
             ].map((t) => (
               <li key={t} className="flex gap-2">
-                <span className="text-red-500">✗</span> {t}
+                <span className="text-red-600">✗</span> {t}
               </li>
             ))}
           </ul>
         </div>
         <div className="glass rounded-2xl p-5 border border-green-500/20">
-          <h4 className="text-green-400 font-black mb-3">✅ After PBS</h4>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <h4 className="text-green-600 font-black mb-3">✅ After PBS</h4>
+          <ul className="space-y-2 text-sm text-gray-700">
             {[
               "Roles are clearly separated",
               "Validators just stake and sign",
@@ -192,7 +192,7 @@ export default function PBSSection() {
               "Healthier, more efficient ecosystem",
             ].map((t) => (
               <li key={t} className="flex gap-2">
-                <span className="text-green-500">✓</span> {t}
+                <span className="text-green-600">✓</span> {t}
               </li>
             ))}
           </ul>

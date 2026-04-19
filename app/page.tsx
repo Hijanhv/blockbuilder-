@@ -11,7 +11,7 @@ import CareerSection from "@/components/CareerSection";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-[#0a0a14] text-white overflow-x-hidden">
+    <main className="relative min-h-screen bg-[#f7f6ff] text-gray-900 overflow-x-hidden">
       <ParticleField />
       <NavBar />
 
@@ -77,7 +77,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="relative border-t border-white/5 py-8 text-center text-gray-600 text-sm">
+      <footer className="relative border-t border-gray-200 py-8 text-center text-gray-500 text-sm">
         <p>
           Built to make blockchain approachable.{" "}
           <span className="gradient-text font-bold">Block Builder Explained.</span>
@@ -88,7 +88,7 @@ export default function Home() {
             href="https://www.nervos.org/knowledge-base/What_is_a_Block_Builder_in_Blockchain_(explainCKBot)"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-indigo-400 hover:text-indigo-300 transition-colors"
+            className="text-indigo-600 hover:text-indigo-500 transition-colors"
           >
             Nervos Knowledge Base
           </a>

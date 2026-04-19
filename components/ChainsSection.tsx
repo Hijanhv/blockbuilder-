@@ -47,14 +47,14 @@ export default function ChainsSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-blue-400 mb-4 border border-blue-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-blue-600 mb-4 border border-blue-500/30">
           🌐 Across the ecosystem
         </div>
         <h2 className="text-3xl sm:text-5xl font-black mb-4">
           Block Builders on{" "}
           <span className="gradient-text">Different Chains</span>
         </h2>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto">
+        <p className="text-gray-600 text-lg max-w-xl mx-auto">
           Not all blockchains work the same way. Here&apos;s how the builder market
           varies across the big three.
         </p>
@@ -81,7 +81,7 @@ export default function ChainsSection() {
                 <span>Builder Market Maturity</span>
                 <span style={{ color: chain.color }}>{chain.maturity}%</span>
               </div>
-              <div className="h-1.5 rounded-full bg-gray-800 overflow-hidden">
+              <div className="h-1.5 rounded-full bg-gray-200 overflow-hidden">
                 <motion.div
                   initial={{ width: 0 }}
                   animate={inView ? { width: `${chain.maturity}%` } : {}}
@@ -92,10 +92,10 @@ export default function ChainsSection() {
               </div>
             </div>
 
-            <p className="text-gray-300 text-sm mb-4 leading-relaxed">{chain.desc}</p>
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">{chain.desc}</p>
             <ul className="space-y-1.5">
               {chain.facts.map((f) => (
-                <li key={f} className="flex items-center gap-2 text-xs text-gray-400">
+                <li key={f} className="flex items-center gap-2 text-xs text-gray-600">
                   <span style={{ color: chain.color }}>▸</span> {f}
                 </li>
               ))}

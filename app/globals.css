@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a14;
-  --foreground: #e8e8f0;
+  --background: #f7f6ff;
+  --foreground: #0a0a14;
 }
 
 @theme inline {
@@ -24,7 +24,7 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a14;
+  background: #ede9ff;
 }
 ::-webkit-scrollbar-thumb {
   background: #6366f1;
@@ -101,9 +101,9 @@ body {
 
 /* Glass card */
 .glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 /* Particle field */

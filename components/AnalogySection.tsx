@@ -23,14 +23,14 @@ export default function AnalogySection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-yellow-400 mb-4 border border-yellow-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-yellow-600 mb-4 border border-yellow-500/30">
           ✈️ Think of it like a flight
         </div>
         <h2 className="text-3xl sm:text-5xl font-black mb-4">
           A Simple{" "}
           <span className="gradient-text-gold">Analogy</span>
         </h2>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto">
+        <p className="text-gray-600 text-lg max-w-xl mx-auto">
           Blockchain sounds complex — but here&apos;s all you need to know, using something familiar.
         </p>
       </motion.div>
@@ -50,12 +50,12 @@ export default function AnalogySection() {
           }}
         />
         <div className="text-7xl mb-4">✈️</div>
-        <p className="text-xl font-bold text-yellow-400 mb-2">Loading a Flight</p>
-        <p className="text-gray-400 max-w-lg mx-auto">
+        <p className="text-xl font-bold text-yellow-600 mb-2">Loading a Flight</p>
+        <p className="text-gray-600 max-w-lg mx-auto">
           Imagine you&apos;re the person loading a plane. You decide which passengers
           board, in what order, and how to maximize cargo value before takeoff.
           <br />
-          <span className="text-white font-semibold">That&apos;s literally what a block builder does.</span>
+          <span className="text-gray-900 font-semibold">That&apos;s literally what a block builder does.</span>
         </p>
       </motion.div>
 
@@ -79,9 +79,9 @@ export default function AnalogySection() {
                 {item.label}
               </span>
               <span className="text-gray-500 text-xs">=</span>
-              <span className="text-sm font-bold text-white">{item.equals}</span>
+              <span className="text-sm font-bold text-gray-900">{item.equals}</span>
             </div>
-            <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+            <p className="text-gray-600 text-xs leading-relaxed">{item.desc}</p>
           </motion.div>
         ))}
       </div>

@@ -54,10 +54,10 @@ function BlockSimulator() {
 
   return (
     <div className="glass rounded-2xl p-6 border border-indigo-500/20 mt-10">
-      <h3 className="text-lg font-black text-white mb-1 text-center">
+      <h3 className="text-lg font-black text-gray-900 mb-1 text-center">
         Block Value Simulator
       </h3>
-      <p className="text-gray-400 text-sm text-center mb-6">
+      <p className="text-gray-600 text-sm text-center mb-6">
         See how a builder turns $18 into $55+ by reordering transactions
       </p>
 
@@ -67,7 +67,7 @@ function BlockSimulator() {
           className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${
             !optimized
               ? "bg-indigo-600 text-white"
-              : "glass text-gray-400 border border-gray-600"
+              : "glass text-gray-600 border border-gray-300"
           }`}
         >
           Naive Block
@@ -77,7 +77,7 @@ function BlockSimulator() {
           className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${
             optimized
               ? "bg-green-600 text-white"
-              : "glass text-gray-400 border border-gray-600"
+              : "glass text-gray-600 border border-gray-300"
           }`}
         >
           Builder Optimized
@@ -108,7 +108,7 @@ function BlockSimulator() {
                 {item.tx}
               </span>
             </div>
-            <span className="text-gray-300 font-bold">{item.fee}</span>
+            <span className="text-gray-700 font-bold">{item.fee}</span>
           </motion.div>
         ))}
       </div>
@@ -117,18 +117,18 @@ function BlockSimulator() {
         key={optimized ? "opt" : "naive"}
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="text-center mt-5 pt-4 border-t border-gray-700"
+        className="text-center mt-5 pt-4 border-t border-gray-200"
       >
-        <span className="text-gray-400 text-sm">Total block value: </span>
+        <span className="text-gray-600 text-sm">Total block value: </span>
         <span
           className={`text-2xl font-black ${
-            optimized ? "text-green-400" : "text-gray-300"
+            optimized ? "text-green-600" : "text-gray-700"
           }`}
         >
           {optimized ? "$55+" : "$18"}
         </span>
         {optimized && (
-          <p className="text-green-400 text-xs mt-1">
+          <p className="text-green-600 text-xs mt-1">
             3× more profitable by inserting one arbitrage tx!
           </p>
         )}
@@ -149,15 +149,15 @@ export default function MEVSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-pink-400 mb-4 border border-pink-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-pink-600 mb-4 border border-pink-500/30">
           💸 The money-making engine
         </div>
         <h2 className="text-3xl sm:text-5xl font-black mb-4">
           What is{" "}
           <span className="gradient-text">MEV?</span>
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          MEV = <strong className="text-white">Maximal Extractable Value.</strong> It&apos;s the extra profit a builder can make
+        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          MEV = <strong className="text-gray-900">Maximal Extractable Value.</strong> It&apos;s the extra profit a builder can make
           by cleverly ordering transactions. Sometimes harmless — sometimes sneaky.
         </p>
       </motion.div>
@@ -202,7 +202,7 @@ export default function MEVSection() {
                 {mev.risk}
               </span>
             </div>
-            <p className="text-gray-300 text-sm mb-3 leading-relaxed">{mev.desc}</p>
+            <p className="text-gray-700 text-sm mb-3 leading-relaxed">{mev.desc}</p>
             <div
               className="text-xs px-3 py-2 rounded-lg font-mono"
               style={{ background: `${mev.color}10`, color: `${mev.color}bb` }}

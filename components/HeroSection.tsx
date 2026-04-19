@@ -28,17 +28,17 @@ export default function HeroSection() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="text-center z-10 mb-4"
       >
-        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-indigo-300 mb-6 border border-indigo-500/30">
+        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-indigo-600 mb-6 border border-indigo-500/30">
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
           Blockchain Explained Simply
         </div>
         <h1 className="text-5xl sm:text-7xl font-black tracking-tight mb-4 leading-tight">
           <span className="gradient-text">Block Builder</span>
         </h1>
-        <p className="text-xl sm:text-2xl text-gray-300 font-medium max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl sm:text-2xl text-gray-700 font-medium max-w-2xl mx-auto leading-relaxed">
           The invisible architect that decides which transactions make it into
           the next blockchain block — and{" "}
-          <span className="text-yellow-400 font-bold">how much money it makes doing so.</span>
+          <span className="text-yellow-600 font-bold">how much money it makes doing so.</span>
         </p>
       </motion.div>
 
@@ -68,7 +68,7 @@ export default function HeroSection() {
                   <span style={{ color: tx.color }} className="font-medium">
                     {tx.label}
                   </span>
-                  <span className="text-gray-300">{tx.fee}</span>
+                  <span className="text-gray-700">{tx.fee}</span>
                 </motion.div>
               ))}
             </div>
@@ -100,8 +100,8 @@ export default function HeroSection() {
               style={{ boxShadow: "0 0 40px rgba(168,85,247,0.2)" }}
             >
               <div className="text-4xl mb-2">🏗️</div>
-              <p className="text-sm font-bold text-purple-300">Block Builder</p>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-sm font-bold text-purple-700">Block Builder</p>
+              <p className="text-xs text-gray-600 mt-1">
                 Sorts, simulates & optimizes
               </p>
               <motion.div
@@ -136,7 +136,7 @@ export default function HeroSection() {
             className="glass rounded-2xl p-5 w-full sm:w-52 border border-green-500/30"
             style={{ boxShadow: "0 0 30px rgba(34,197,94,0.15)" }}
           >
-            <p className="text-xs text-green-400 font-bold uppercase tracking-wider mb-3 text-center">
+            <p className="text-xs text-green-600 font-bold uppercase tracking-wider mb-3 text-center">
               Final Block ✓
             </p>
             <div className="space-y-2">
@@ -153,10 +153,10 @@ export default function HeroSection() {
                   <span style={{ color: tx.color }} className="font-medium">
                     {tx.label}
                   </span>
-                  <span className="text-gray-300">{tx.fee}</span>
+                  <span className="text-gray-700">{tx.fee}</span>
                 </div>
               ))}
-              <div className="text-center text-green-400 text-xs font-bold mt-2 pt-2 border-t border-green-500/20">
+              <div className="text-center text-green-600 text-xs font-bold mt-2 pt-2 border-t border-green-500/20">
                 Total Value: $77+
               </div>
             </div>
